@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<style>
+    th {
+        width: 33%;
+    }
+</style>
+<body>
+
+<h2 style="text-align: center">User data in Student</h2>
+
+    <table border style="width: 100%;border-collapse: collapse">
+        <tr style="font-size: 20px;background: grey;color: white;border-color: black;">
+            <th>Name</th>
+            <th>Image</th>
+            <th>Price</th>
+
+
+        </tr>
+        {% for data in dataset %}
+            <tr>
+                <th>{{ data.name }}</th>
+                <th> {{ data.image }} </th>
+                <th>{{ data.price }}</th>
+
+
+            </tr>
+        {% endfor %}
+
+    </table>
+
+
+</body>
+</html>
